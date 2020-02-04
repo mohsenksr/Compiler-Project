@@ -1,0 +1,69 @@
+package com.company.lexer;
+
+public enum Token {
+	TRUE(0),
+	FALSE(1),
+	BEGIN(2),
+	END(3),
+	ARRAY(4),
+	OF(5),
+	IF(6),
+	THEN(7),
+	ELSE(8),
+	WHILE(9),
+	DO(10),
+	CONTINUE(11),
+	BREAK(12),
+	VAR(13),
+	ASSIGN(14),
+	FUNCTION(15),
+	PROCEDURE(16),
+	RETURN(17),
+	BOOLEAN(18),
+	INTEGER(19),
+	REAL(20),
+	CHAR(21),
+	STRING(22),
+	LOGICAL_AND(23),
+	LOGICAL_OR(24),
+	PLUS(25),
+	MINUS(26),
+	MULTIPLY(27),
+	DIVIDE(28),
+	MOD(29),
+	BITWISE_AND(30),
+	BITWISE_OR(31),
+	EXCLUSIVE_ADD(32),
+	LOGICAL_NOT(33),
+	SEMICOLON(34),
+	COMMA(35),
+	COLON(36),
+	ASSESSMENT(37),
+	DOT(38),
+	LEFT_PAREN(39),
+	RT_PAREN(40),
+	LEFT_BRACKET(41),
+	RIGHT_BRACKET(42),
+	EQUAL(43),
+	LESS_THAN(44),
+	GREATER_THAN(45),
+	LESS_OR_EQUAL(46),
+	GREATER_OR_EQUAL(47),
+	NOT_EQUAL(48),
+	IDENTIFY(49),
+	INTLIT(50),
+	REALLIT(51),
+	CHARLIT(52),
+	STRINGLIT(53);
+
+
+	private int sym;
+
+	Token(int sym) {
+		this.sym = sym;
+	}
+
+	public int getSym() {
+		return sym;
+	}
+}
